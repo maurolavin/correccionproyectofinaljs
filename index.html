@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Desafio Complementario</title>
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+
+</head>
+<body>
+    <header>
+        <nav>
+            <li class="navTitle">Conversor de Unidades</li>
+            <li><a href="#about">Acerca de</a></li>
+        </nav>
+    </header>
+    <section class="bienvenida">
+        <div class="bienvenidaLeft">
+            <img alt="Una imagen relacionada a la accion de medir algo, ya sea distancias, datos, etc." id="measureImage">
+        </div>
+        <div class="bienvenidaRight">
+            <h2>Una herramienta para convertir unidades de medicion</h2>
+            <a href="#converterContainer">Vamos alla!</a>
+        </div>
+    </section>
+    <div class="converterContainer" id="converterContainer">
+        <h1 class="welcome" id="welcome">Conversor de unidades</h1>
+            <div class="columnContainer">
+                <span>Quiero convertir</span>
+                
+                <select name="unit1" id="unit1">
+                    <option value="kilometer">Kilometros</option>
+                    <option value="meter">Metros</option>
+                    <option value="centimeter">Centimetros</option>
+                    <option value="miles">Millas</option>
+                </select>
+                <span>a</span>
+                <select name="unit2" id="unit2">
+                    <option value="kilometer">Kilometros</option>
+                    <option value="meter">Metros</option>
+                    <option value="centimeter">Centimetros</option>
+                    <option value="miles">Millas</option>
+                </select>
+                <input type="number" id="valor" placeholder="Ingresa numero a convertir">
+            </div>
+            <div class="resultado" id="result">
+            </div>
+            <button type="" id="saveValue">Anotar valor</button>
+            <div id="storedValues" class="storedValues"></div>
+    </div>
+    <section class="about">
+        <div>
+            <h2>Esta es una herramienta para la conversión de unidades.<br>Está desarrollada en <span class="htmlSpan">HTML</span>, <span class="cssSpan">CSS</span> y <span class="jsSpan">JavaScript</span>. Podes ayudar a añadir más unidades o funciones completando el formulario :D</h2>
+        </div>
+        <div class="contact">
+            <form id="contactForm" class="form" action="https://formsubmit.co/b9ddf676e4cd204aa25faaa60c31cc6f" method="POST">
+                <label for="name">Nombre</label>
+                <input name="name" required type="text" id="name" placeholder="Mauricio Perez">
+                <label for="email">E-Mail</label>
+                <input name="email" type="text" id="email" required placeholder="mauricio@outlook.com">
+                <label for="message">Tu mensaje</label>
+                <textarea id="message" name="message" id="" cols="30" rows="10" required placeholder="Hola! Creo que podrias..."></textarea>
+                <button type="submit" class="btn primary full" id="submitButton">ENVIAR</button>
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html">
+                <input type="hidden" name="_captcha" value="false">
+            </form>
+            <a href="mailto:villarroelmauroemanuel@gmail.com" id="mailDirection" class="invisible">send</a>
+        </div>
+    </section>
+    <footer>
+        <div class="socials">
+            <ul>
+                <li><a href="https://github.com/maurolavin" target="_blank">Github</a></li>
+                <li><a href="https://www.linkedin.com/in/villarroelmauro/" target="_blank">LinkedIn</a></li>
+                <li><a href="mailto:villarroelmauroemanuel@gmail.com" target="_blank">E-mail</a></li>
+            </ul>
+        </div>
+        <div class="copyright">
+            <p>Conversor de unidades es mi primer proyecto de Javascript.</p>
+            <span class="copyrightfooter">Copyright 2022 Mauro Villarroel</span>
+        </div>
+    </footer>
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
